@@ -7,6 +7,7 @@ The API provides basic CRUD operations for a `User` entity and can be tested usi
 
 ## Technologies Used
 
+
 - Java 21
 - Spring Boot
 - Spring Web
