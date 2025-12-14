@@ -12,10 +12,8 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
         http
-                // Postman için CSRF kapatıyoruz
                 .csrf(csrf -> csrf.disable())
 
-                // Endpoint izinleri
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/**").permitAll()
                         .anyRequest().authenticated()
